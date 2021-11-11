@@ -36,6 +36,7 @@ class CreateUsersTable extends Migration
             $table->text('two_factor_secret')->default(NULL)->nullable();
             $table->text('two_factor_recovery_code')->default(NULL)->nullable();
 
+            $table->foreign('user_id')->references('user_id')->on('users');
             $table->foreign('gender_id')->references('gender_id')->on('genders');
             $table->foreign('course_id')->references('course_id')->on('courses');
         });

@@ -1,11 +1,10 @@
-
 <?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePermissionsTable extends Migration
+class CreateSADocumentTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +13,13 @@ class CreatePermissionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('permissions', function (Blueprint $table) {
-            $table->id('permission_id');
-            $table->string('name')->unique();
-            $table->string('description')->nullable()->default(NULL);
+        // SA = Student Accomplishments
+        Schema::create('SA_document_types', function (Blueprint $table) {
+            $table->id('SA_document_type_id');
+            $table->string('document_type');
+            $table->string('helper')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -29,6 +30,6 @@ class CreatePermissionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('permissions');
+        Schema::dropIfExists('SA_document_types');
     }
 }

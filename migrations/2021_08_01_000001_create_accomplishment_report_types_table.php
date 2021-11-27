@@ -1,11 +1,10 @@
-
 <?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePermissionsTable extends Migration
+class CreateAccomplishmentReportTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +13,10 @@ class CreatePermissionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('permissions', function (Blueprint $table) {
-            $table->id('permission_id');
-            $table->string('name')->unique();
-            $table->string('description')->nullable()->default(NULL);
-            $table->timestamps();
+        Schema::create('accomplishment_report_types', function (Blueprint $table) {
+            $table->id('accomplishment_report_type_id');
+            $table->string('accomplishment_report_type');
+
         });
     }
 
@@ -29,6 +27,6 @@ class CreatePermissionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('permissions');
+        Schema::dropIfExists('accomplishment_report_types');
     }
 }

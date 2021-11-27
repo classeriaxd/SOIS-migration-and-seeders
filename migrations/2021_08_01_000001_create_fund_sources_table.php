@@ -1,11 +1,10 @@
-
 <?php
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePermissionsTable extends Migration
+class CreateFundSourcesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +13,12 @@ class CreatePermissionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('permissions', function (Blueprint $table) {
-            $table->id('permission_id');
-            $table->string('name')->unique();
-            $table->string('description')->nullable()->default(NULL);
+        Schema::create('fund_sources', function (Blueprint $table) {
+            $table->id('fund_source_id');
+            $table->string('fund_source');
+            $table->string('helper')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -29,6 +29,6 @@ class CreatePermissionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('permissions');
+        Schema::dropIfExists('fund_sources');
     }
 }

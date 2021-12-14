@@ -22,6 +22,9 @@ class CreateTagsTable extends Migration
             
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('users_id')->on('users');
+
+            $table->integer('status');
+            
             $table->timestamps();
         });
     }

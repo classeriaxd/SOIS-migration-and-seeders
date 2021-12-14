@@ -32,6 +32,13 @@ class CreateArticlesTable extends Migration
 
             $table->boolean('is_article_featured_landing_page')->nullable();
 
+            $table->integer('is_article_featured_organization_page')->nullable();
+
+            $table->boolean('is_article_top_news_organization_page')->nullable();
+
+            $table->unsignedBigInteger('organization_id')->nullable();
+            $table->foreign('organization_id')->references('organizations_id')->on('organizations');
+
             $table->timestamps();
         });
     }

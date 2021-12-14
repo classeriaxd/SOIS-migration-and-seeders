@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddIsTopnavIsFooterToNavigationMenusTable extends Migration
+class CreateNavigationMenusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,19 @@ class AddIsTopnavIsFooterToNavigationMenusTable extends Migration
      */
     public function up()
     {
-        Schema::table('navigation_menus', function (Blueprint $table) {
+        Schema::create('navigation_menus', function (Blueprint $table) {
+            $table->id('navigation_menus_id');
+            $table->integer('sequence');
+            $table->integer('type');
+
+            
+            $table->string('label');
+            $table->string('slug');
+
             $table->boolean('is_topnav')->nullable();
             $table->boolean('is_footer')->nullable();
+            
+            $table->timestamps();
         });
     }
 
@@ -26,8 +36,6 @@ class AddIsTopnavIsFooterToNavigationMenusTable extends Migration
      */
     public function down()
     {
-        Schema::table('navigation_menus', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('navigation_menus');
     }
 }

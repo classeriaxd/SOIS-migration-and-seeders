@@ -33,6 +33,11 @@ class CreateEventsTable extends Migration
             $table->timestamp('deleted_at',$precision = 0)->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('users_id')->on('users');
+            $table->date('end_date')->nullable();
+            $table->boolean('isEventFeat')->nullable();
+
+            $table->unsignedBigInteger('organization_id')->nullable();
+            $table->foreign('organization_id')->references('organizations_id')->on('organizations');
         });
     }
 

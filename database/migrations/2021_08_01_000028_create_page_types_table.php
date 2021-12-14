@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddIsFeaturedIsEventsIsAnnouncementsToPagesTable extends Migration
+class CreatePageTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,19 @@ class AddIsFeaturedIsEventsIsAnnouncementsToPagesTable extends Migration
      */
     public function up()
     {
-        Schema::table('pages', function (Blueprint $table) {
+        Schema::create('page_types', function (Blueprint $table) {
+            $table->id('page_types_id');
+            $table->string('page_type');
+            $table->string('page_description');
+
             $table->boolean('is_announcements_activated')->nullable();
             $table->boolean('is_events_activated')->nullable();
             $table->boolean('is_articles_activated')->nullable();
+
+            
+
+            $table->boolean('status');
+            $table->timestamps();
         });
     }
 
@@ -27,8 +36,6 @@ class AddIsFeaturedIsEventsIsAnnouncementsToPagesTable extends Migration
      */
     public function down()
     {
-        Schema::table('pages', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('page_types');
     }
 }

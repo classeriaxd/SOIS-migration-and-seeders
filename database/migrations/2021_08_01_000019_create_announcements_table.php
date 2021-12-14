@@ -28,6 +28,9 @@ class CreateAnnouncementsTable extends Migration
             $table->date('exp_date')->nullable();
             $table->time('exp_time', $precicion = 0)->nullable();
 
+            $table->unsignedBigInteger('organization_id')->nullable();
+            $table->foreign('organization_id')->references('organizations_id')->on('organizations');
+
             $table->timestamps();
         });
     }

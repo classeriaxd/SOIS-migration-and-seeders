@@ -36,7 +36,16 @@ class CreateSystemAssetsTable extends Migration
             $table->boolean('status');
 
 
+            $table->boolean('is_latest_image')->nullable();
 
+            $table->unsignedBigInteger('events_id')->nullable();
+            $table->foreign('events_id')->references('event_id')->on('events');
+
+            $table->unsignedBigInteger('announcement_id')->nullable();
+            $table->foreign('announcement_id')->references('announcements_id')->on('announcements');
+
+            $table->unsignedBigInteger('articles_id')->nullable();
+            $table->foreign('articles_id')->references('articles_id')->on('articles');
 
 
             $table->timestamps();

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPositionTypeToOfficersTable extends Migration
+class CreateOfficerPositionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,15 @@ class AddPositionTypeToOfficersTable extends Migration
      */
     public function up()
     {
-        Schema::table('officers', function (Blueprint $table) {
+        Schema::create('officer_positions', function (Blueprint $table) {
+            $table->id('officer_positions_id');
+            $table->string('position_category');
+            $table->boolean('status');
+
             $table->unsignedBigInteger('position_category');
             $table->foreign('position_category')->references('officer_positions_id')->on('officer_positions');
+
+            $table->timestamps();
         });
     }
 
@@ -26,8 +32,6 @@ class AddPositionTypeToOfficersTable extends Migration
      */
     public function down()
     {
-        Schema::table('officers', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('officer_positions');
     }
 }

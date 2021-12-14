@@ -15,12 +15,12 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->id('pages_id');
+            $table->boolean('is_default_home')->nullable();
+            $table->boolean('is_default_not_found')->nullable(); 
             $table->string('title')->nullable();
             $table->string('slug')->nullable() ;
             $table->longText('content')->nullable() ;
 
-            $table->boolean('is_default_home')->nullable()->after('pages_id');
-            $table->boolean('is_default_not_found')->nullable()->after('is_default_home'); 
             $table->string('primary_color')->nulllable();
             $table->string('secondary_color')->nulllable();
             $table->string('tertiary_color')->nulllable();

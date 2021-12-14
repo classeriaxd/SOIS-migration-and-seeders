@@ -17,8 +17,7 @@ class CreateNavigationMenuTypesTable extends Migration
             $table->id('navigation_menu_types_id');
             $table->string('navigation_menu_type');
             $table->string('navigation_menu_description');
-            $table->boolean('is_topnav')->nullable();
-            $table->boolean('is_footer')->nullable();
+            
             $table->boolean('status');
             $table->timestamps();
         });

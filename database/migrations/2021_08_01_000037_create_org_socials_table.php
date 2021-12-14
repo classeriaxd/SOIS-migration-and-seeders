@@ -25,6 +25,11 @@ class CreateOrgSocialsTable extends Migration
 
             $table->string('org_social_link');
 
+            $table->string('embed_data')->nullable();
+
+            $table->string('social_name')->nullable();
+            
+
             $table->boolean('status');
 
             $table->timestamps();

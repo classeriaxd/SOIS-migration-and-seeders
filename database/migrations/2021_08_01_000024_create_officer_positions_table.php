@@ -18,9 +18,7 @@ class CreateOfficerPositionsTable extends Migration
             $table->string('position_category');
             $table->boolean('status');
 
-            $table->unsignedBigInteger('position_category');
-            $table->foreign('position_category')->references('officer_positions_id')->on('officer_positions');
-
+            
             $table->timestamps();
         });
     }

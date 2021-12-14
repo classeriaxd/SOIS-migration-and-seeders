@@ -31,6 +31,13 @@ class CreateAnnouncementsTable extends Migration
             $table->unsignedBigInteger('organization_id')->nullable();
             $table->foreign('organization_id')->references('organizations_id')->on('organizations');
 
+            $table->boolean('isAnnouncementInHomepage')->nullable();
+
+            $table->string('announcement_slug')->nullable();
+
+            $table->boolean('isAnnouncementInOrgpage')->nullable();
+            
+
             $table->timestamps();
         });
     }

@@ -16,6 +16,8 @@ class CreateSocialMediaTable extends Migration
         Schema::create('social_media', function (Blueprint $table) {
             $table->id('social_media_id');
             $table->string('social_media_name');
+            $table->string('embed_logo')->nullable();
+            
             $table->boolean('status');
             $table->timestamps();
         });

@@ -39,6 +39,15 @@ class CreateArticlesTable extends Migration
             $table->unsignedBigInteger('organization_id')->nullable();
             $table->foreign('organization_id')->references('organizations_id')->on('organizations');
 
+            $table->boolean('is_carousel_homepage')->nullable();
+            $table->boolean('is_carousel_org_page')->nullable();
+
+            $table->unsignedBigInteger('article_type_id')->nullable();
+            $table->foreign('article_type_id')->references('article_types_id')->on('article_types');
+
+            $table->boolean('is_article_featured_home_page')->nullable();
+            
+
             $table->timestamps();
         });
     }

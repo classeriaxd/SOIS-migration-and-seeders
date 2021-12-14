@@ -18,12 +18,8 @@ class CreatePageTypesTable extends Migration
             $table->string('page_type');
             $table->string('page_description');
 
-            $table->boolean('is_announcements_activated')->nullable();
-            $table->boolean('is_events_activated')->nullable();
-            $table->boolean('is_articles_activated')->nullable();
-
             
-
+            
             $table->boolean('status');
             $table->timestamps();
         });

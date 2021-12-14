@@ -29,6 +29,12 @@ class CreateOfficersTable extends Migration
 
             $table->date('exp_date');
 
+            $table->string('officer_signature')->nullable();
+            
+            $table->unsignedBigInteger('position_category');
+            $table->foreign('position_category')->references('officer_positions_id')->on('officer_positions');
+
+
             $table->integer('status');
 
             $table->timestamps();

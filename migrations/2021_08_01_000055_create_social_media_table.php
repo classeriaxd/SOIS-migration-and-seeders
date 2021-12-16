@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAssetTypesTable extends Migration
+class CreateSocialMediaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateAssetTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('asset_types', function (Blueprint $table) {
-            $table->id('asset_type_id');      
-            $table->string('asset_type_name');
-            $table->string('asset_type_description');      
-            $table->string('type');
+        Schema::create('social_media', function (Blueprint $table) {
+            $table->id('social_media_id');
+            $table->string('social_media_name');
+            $table->boolean('status');
+
+            $table->string('embed_logo')->nullable();
+            
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreateAssetTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('asset_types');
+        Schema::dropIfExists('social_media');
     }
 }

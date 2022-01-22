@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->id('user_id');
             $table->foreignId('course_id')->nullable();
             $table->foreignId('gender_id')->nullable();
-
+            $table->string('title')->nullable()->default(NULL);
             $table->string('email')->unique();
             $table->string('password');
             $table->string('student_number')->unique()->nullable();

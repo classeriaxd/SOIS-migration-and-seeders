@@ -52,6 +52,12 @@ class RoleUserSeeder extends Seeder
                 'organization_id' => $organization_id,
             ],
             [  
+                //membership - user role
+                'user_id' => 5,
+                'role_id' => 8,
+                'organization_id' => $organization_id,
+            ],
+            [  
                 // gpoa
                 'user_id' => 6,
                 'role_id' => 6,

@@ -36,6 +36,7 @@ class CreateUpcomingEventsTable extends Migration
             $table->string('advisers_approval')->default('pending'); //values = pending/disapproved/approved
             $table->string('studAffairs_approval')->default('pending'); //values = pending/disapproved/approved
             $table->string('completion_status')->default('upcoming'); //values = upcoming/accomplished
+            $table->string('partnership_status'); //values = on/off
             $table->timestamps();
 
             $table->foreign('organization_id')->references('organization_id')->on('organizations');

@@ -59,7 +59,7 @@ class OrganizationAssetSeeder extends Seeder
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
             ],
-                        [
+            [
                 'organization_id' => 7,
                 'organization_asset_type_id' => 1,
                 'file' => 'organization_assets/logo/mentors_logo.png',
@@ -70,6 +70,20 @@ class OrganizationAssetSeeder extends Seeder
                 'organization_id' => 8,
                 'organization_asset_type_id' => 1,
                 'file' => 'organization_assets/logo/pasoa_logo.png',
+                'created_at' => $currentTime,
+                'updated_at' => $currentTime,
+            ],
+            // logo
+            [
+                'organization_id' => 2,
+                'asset_type_id' => 1,
+                'file' => 'image/svg/pup.svg',
+                'asset_name' => 'image/svg/pup.svg',
+                'is_latest_logo' => '1',
+                'is_latest_banner' => '0',
+                'user_id' => '1',
+                'page_type_id' => '4',
+                'status' => '1',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
             ],

@@ -119,6 +119,12 @@ class RoleUserSeeder extends Seeder
                 'role_id' => 5,
                 'organization_id' => 13,
             ],
+            [  
+                // Director
+                'user_id' => 15,
+                'role_id' => 10,
+                'organization_id' => NULL,
+            ],
 
 
             

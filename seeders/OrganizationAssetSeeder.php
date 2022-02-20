@@ -77,8 +77,8 @@ class OrganizationAssetSeeder extends Seeder
             [
                 'organization_id' => 2,
                 'asset_type_id' => 1,
-                'file' => 'image/svg/pup.svg',
-                'asset_name' => 'image/svg/pup.svg',
+                'file' => 'organization_assets/logo/pasoa_logo.png',
+                'asset_name' => 'organization_assets/logo/pup_logo.png',
                 'is_latest_logo' => '1',
                 'is_latest_banner' => '0',
                 'user_id' => '1',

@@ -27,6 +27,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'aeces',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -39,6 +40,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'cs',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -51,6 +53,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'jma',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -63,6 +66,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'jpia',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -75,6 +79,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'jpmap',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -87,6 +92,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'jpsme',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -99,6 +105,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'ms',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -111,6 +118,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'pasoa',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
             [
                 'organization_type_id' => '2',
@@ -119,9 +127,11 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'CSC',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -134,6 +144,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'REC',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -146,6 +157,7 @@ class OrganizationSeeder extends Seeder
                 'organization_slug' => 'ERG',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
 
             [
@@ -155,10 +167,12 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
-                'organization_slug' => 'IC',
+                'organization_slug' => 'irock-campus',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
+          
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Pupukaw',
@@ -166,10 +180,37 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
-                'organization_slug' => 'Pupukaw',
+                'organization_tertiary_color' => '#1bbede',
+                'organization_slug' => 'pupukaw',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
+                'status' => 1,
             ],
+            [
+                'organization_type_id' => 2,
+                'organization_name' => 'Emergency Response Group',
+                'organization_acronym' => 'erg',
+                'organization_details' => '...',
+                'organization_primary_color' => '#1bbede',
+                'organization_secondary_color' => '#1bbede',
+                'organization_tertiary_color' => '#1bbede',
+                'organization_slug' => 'erg',
+                'created_at' => $currentTime,
+                'updated_at' => $currentTime,
+                'status' => 1,
+            ],
+            [
+                'organization_type_id' => 2,
+                'organization_name' => 'The Chronicler',
+                'organization_acronym' => 'The Chronicler',
+                'organization_details' => '...',
+                'organization_primary_color' => '#1bbede',
+                'organization_secondary_color' => '#1bbede',
+                'organization_tertiary_color' => '#1bbede',
+                'organization_slug' => 'the-chronicler',
+                'created_at' => $currentTime,
+                'updated_at' => $currentTime,
+                'status' => 1,
         ];
         DB::table('organizations')->insert($data);
     }

@@ -18,46 +18,33 @@ class SoisLinkSeeder extends Seeder
         $currentTime = Carbon::now();
         $data = [
             [
-                'page_types_id' => 1,
-                'page_type' => 'system page',
-                'page_description' => 'This page type is used for the system pages the syttem is using',
+                'sois_links_id' => 1,
+                'link_name' => 'Accomplishment Report',
+                'link_description' => 'This link is to access Accomplishment Reports website',
+                'external_link' => 'https://sois-ar.puptaguigcs.net/',
                 'status' => 1,
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
             ],
             [
-                'page_types_id' => 2,
-                'page_type' => 'news',
-                'page_description' => 'This page type is used for the news page',
+                'sois_links_id' => 2,
+                'link_name' => 'GPOA',
+                'link_description' => 'This link is to access GPOA website',
+                'external_link' => 'http://sois-gpoa.puptaguigcs.net/',
                 'status' => 1,
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
             ],
             [
-                'page_types_id' => 3,
-                'page_type' => 'announcements',
-                'page_description' => 'This page type is used for the announcements page',
-                'status' => 1,
-                'created_at' => $currentTime,
-                'updated_at' => $currentTime,
-            ],
-            [
-                'page_types_id' => 4,
-                'page_type' => 'organizations',
-                'page_description' => 'This page type is used for the organizations page',
-                'status' => 1,
-                'created_at' => $currentTime,
-                'updated_at' => $currentTime,
-            ],
-            [
-                'page_types_id' => 5,
-                'page_type' => 'default interfaces',
-                'page_description' => 'This page type is used for the default interfaces page',
+                'sois_links_id' => 3,
+                'link_name' => 'Membership',
+                'link_description' => 'This link is to access Membership website',
+                'external_link' => 'https://sois-membership.puptaguigcs.net/',
                 'status' => 1,
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
             ],
         ];
-        DB::table('page_types')->insert($data);
+        DB::table('sois_links')->insert($data);
     }
 }

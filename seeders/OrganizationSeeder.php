@@ -17,6 +17,7 @@ class OrganizationSeeder extends Seeder
     {
         $currentTime = Carbon::now();
         $data = [
+            // 1
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Association of Electronics Engineering Students',
@@ -24,12 +25,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'aeces',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 2
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Computer Society',
@@ -37,12 +39,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'cs',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 3
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Junior Marketing Association',
@@ -50,12 +53,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'jma',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 4
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Junior Philippine Institutes of Accountants',
@@ -63,12 +67,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'jpia',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 5
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Junior People Management Association of the Philippines',
@@ -76,12 +81,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'jpmap',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 6
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Junior Philippine Society of Mechanical Engineering',
@@ -89,12 +95,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'jpsme',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 7
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Mentor\'s Society',
@@ -102,12 +109,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'ms',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 8
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Philippine Association of Students in Office Administration',
@@ -115,11 +123,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'pasoa',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
+            // 9
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Central Student Council',
@@ -133,7 +143,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 10
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Radio Engineering Circle',
@@ -141,12 +151,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'REC',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 11
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Emergency Response Group',
@@ -154,12 +165,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'ERG',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // 12
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'iRock Campus',
@@ -167,12 +179,13 @@ class OrganizationSeeder extends Seeder
                 'organization_details' => 'Organization Details',
                 'organization_primary_color' => '#0376FF',
                 'organization_secondary_color' => '#FFFFFF',
+                'organization_tertiary_color' => '#1bbede',
                 'organization_slug' => 'irock-campus',
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-          
+            // 13
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Pupukaw',
@@ -186,19 +199,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-            [
-                'organization_type_id' => 2,
-                'organization_name' => 'Emergency Response Group',
-                'organization_acronym' => 'erg',
-                'organization_details' => '...',
-                'organization_primary_color' => '#1bbede',
-                'organization_secondary_color' => '#1bbede',
-                'organization_tertiary_color' => '#1bbede',
-                'organization_slug' => 'erg',
-                'created_at' => $currentTime,
-                'updated_at' => $currentTime,
-                'status' => 1,
-            ],
+            // 14
             [
                 'organization_type_id' => 2,
                 'organization_name' => 'The Chronicler',
@@ -211,6 +212,7 @@ class OrganizationSeeder extends Seeder
                 'created_at' => $currentTime,
                 'updated_at' => $currentTime,
                 'status' => 1,
+            ],
         ];
         DB::table('organizations')->insert($data);
     }

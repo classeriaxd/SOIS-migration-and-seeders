@@ -17,6 +17,20 @@ class OrganizationSeeder extends Seeder
     {
         $currentTime = Carbon::now();
         $data = [
+            // placeholder
+            [
+                'organization_type_id' => 1,
+                'organization_name' => 'Polytechnic University of the Philippines',
+                'organization_acronym' => 'PUP',
+                'organization_details' => '...',
+                'organization_primary_color' => '...',
+                'organization_secondary_color' => '...',
+                'organization_tertiary_color' => '...',
+                'organization_slug' => 'aeces',
+                'created_at' => $currentTime,
+                'updated_at' => $currentTime,
+                'status' => 1,
+            ],
             // 1
             [
                 'organization_type_id' => 1,

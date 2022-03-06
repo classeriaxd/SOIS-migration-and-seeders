@@ -17,7 +17,7 @@ class OrganizationSeeder extends Seeder
     {
         $currentTime = Carbon::now();
         $data = [
-             // placeholder
+             // count=1 originalValue=placeholder
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Polytechnic University of the Philippines',
@@ -31,6 +31,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
+            // count=2 originalValue=1
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Association of Electronics Engineering Students',
@@ -43,7 +44,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=3 originalValue=2
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Computer Society',
@@ -56,7 +57,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=4 originalValue=3
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Junior Marketing Association',
@@ -69,7 +70,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=5 originalValue=4
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Junior Philippine Institutes of Accountants',
@@ -82,7 +83,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=6 originalValue=5
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Junior People Management Association of the Philippines',
@@ -95,7 +96,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=7 originalValue=6
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Junior Philippine Society of Mechanical Engineering',
@@ -108,7 +109,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=8 originalValue=7
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Mentor\'s Society',
@@ -121,7 +122,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=9 originalValue=8
             [
                 'organization_type_id' => 1,
                 'organization_name' => 'Philippine Association of Students in Office Administration',
@@ -134,6 +135,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
+            // count=10 originalValue=9
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Central Student Council',
@@ -147,7 +149,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=11 originalValue=10
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Radio Engineering Circle',
@@ -160,7 +162,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=12 originalValue=11
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Emergency Response Group',
@@ -173,7 +175,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-
+            // count=13 originalValue=12
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'iRock Campus',
@@ -186,7 +188,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
-          
+            // count=14 originalValue=13 
             [
                 'organization_type_id' => '2',
                 'organization_name' => 'Pupukaw',
@@ -200,6 +202,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
+            // count=15 originalValue=14
             [
                 'organization_type_id' => 2,
                 'organization_name' => 'Emergency Response Group',
@@ -213,6 +216,7 @@ class OrganizationSeeder extends Seeder
                 'updated_at' => $currentTime,
                 'status' => 1,
             ],
+            // count=16 originalValue=15
             [
                 'organization_type_id' => 2,
                 'organization_name' => 'The Chronicler',

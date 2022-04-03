@@ -90,6 +90,6 @@ class SoisSubGateSeeder extends Seeder
                 'updated_at' => $currentTime,
             ],
         ];
-        DB::table('sois_links')->insert($data);
+        DB::table('sois_sub_gates')->insert($data);
     }
 }
